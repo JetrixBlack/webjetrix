@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.9.0"
+    }
+  },
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/index", "dest": "/api/index.php" },
+    { "src": "/blog", "dest": "/api/blog.php" },
+    { "src": "/contacto", "dest": "/api/contacto.php" },
+    { "src": "/planes", "dest": "/api/planes.php" },
+    { "src": "/proyectos", "dest": "/api/proyectos.php" },
+    { "src": "/servicios", "dest": "/api/servicios.php" },
+    { "src": "/sobre-mi", "dest": "/api/sobre-mi.php" },
+    { "src": "/privacidad", "dest": "/api/privacidad.php" },
+    { "src": "/terminos", "dest": "/api/terminos.php" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ]
+}

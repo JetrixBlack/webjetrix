@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<!-- Declaración del tipo de documento HTML5 -->
+<!-- Declaraci├│n del tipo de documento HTML5 -->
 <html class="scroll-smooth" lang="es">
-<!-- scroll-smooth activa desplazamiento suave; lang="es" define idioma español -->
+<!-- scroll-smooth activa desplazamiento suave; lang="es" define idioma espa├▒ol -->
 
 <head>
     <meta charset="utf-8" />
-    <!-- Codificación de caracteres UTF-8 -->
+    <!-- Codificaci├│n de caracteres UTF-8 -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <!-- Meta tag para diseño responsive en móviles -->
+    <!-- Meta tag para dise├▒o responsive en m├│viles -->
     <title><?= htmlspecialchars($pageTitle ?? 'Jetrix | Desarrollo Web que Convierte') ?></title>
-    <!-- Título dinámico de la página; usa valor por defecto si no se define $pageTitle -->
+    <!-- T├¡tulo din├ímico de la p├ígina; usa valor por defecto si no se define $pageTitle -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- CDN de Tailwind CSS con plugins de formularios y container queries -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
     <!-- Fuente de iconos Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap" rel="stylesheet" />
-    <!-- Fuente Exo 2 para títulos -->
+    <!-- Fuente Exo 2 para t├¡tulos -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
     <!-- Fuente Raleway para cuerpo de texto -->
     <script>
-        // Configuración extendida de Tailwind CSS
+        // Configuraci├│n extendida de Tailwind CSS
         tailwind.config = {
             // Modo oscuro no implementado actualmente
             theme: {
@@ -51,13 +51,13 @@
                         "stack-sm": "12px", "section-gap": "120px", "gutter": "24px",
                         "margin-desktop": "64px", "unit": "4px", "stack-lg": "48px"
                     },
-                    // Familias tipográficas del diseño
+                    // Familias tipogr├íficas del dise├▒o
                     fontFamily: {
                         "headline-xl": ["Exo 2"], "display-lg-mobile": ["Exo 2"], "label-sm": ["Exo 2"],
                         "code-md": ["Exo 2"], "body-lg": ["Raleway"], "display-lg": ["Exo 2"],
                         "headline-lg": ["Exo 2"], "body-md": ["Raleway"]
                     },
-                    // Escala de tamaños de texto con sus propiedades
+                    // Escala de tama├▒os de texto con sus propiedades
                     fontSize: {
                         "headline-xl": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }],
                         "display-lg-mobile": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
@@ -94,7 +94,7 @@
     <p class="mt-5 text-xs uppercase tracking-[0.2em] text-white/40 font-medium">Cargando</p>
 </div>
 <style>
-/* Animación de la barra circular de carga */
+/* Animaci├│n de la barra circular de carga */
 .preloader-ring {
     animation: preloaderSpin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     transform-origin: center;
@@ -104,14 +104,14 @@
     50% { stroke-dashoffset: 31.4; }
     100% { stroke-dashoffset: 125.6; transform: rotate(360deg); }
 }
-/* Fade out del preloader cuando la página carga */
+/* Fade out del preloader cuando la p├ígina carga */
 .preloader-hide {
     opacity: 0;
     pointer-events: none;
 }
 </style>
 <script>
-// Ocultar preloader cuando la página carga completamente
+// Ocultar preloader cuando la p├ígina carga completamente
 window.addEventListener('load', function() {
     setTimeout(function() {
         var preloader = document.getElementById('preloader');
@@ -122,4 +122,4 @@ window.addEventListener('load', function() {
     }, 600);
 });
 </script>
-<!-- Cuerpo: fondo claro, texto oscuro, selección azul eléctrico, tipografía base Raleway -->
+<!-- Cuerpo: fondo claro, texto oscuro, selecci├│n azul el├®ctrico, tipograf├¡a base Raleway -->

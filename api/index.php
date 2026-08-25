@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // Configuración: define la página actual, el tótulo e incluye componentes del layout
 $currentPage = 'inicio';
 $pageTitle = 'Jetrix | Desarrollo Web que Convierte'; // Tótulo de la página para SEO y la pestaña del navegador
@@ -10,7 +10,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
     <section class="relative w-full min-h-svh md:min-h-[110svh] flex items-center">
         <div class="absolute inset-0 z-0">
             <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-                <source src="assets/img/Fondo-web.mp4" type="video/mp4">
+                <source src="/assets/img/Fondo-web.mp4" type="video/mp4">
             </video>
         </div>
         <div class="relative z-20 w-full px-4 pt-20 md:pt-4">
@@ -24,7 +24,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                     </h1>
                     <div class="mt-6 md:hidden z-30">
                         <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden"
-                            href="contacto.php">
+                            href="/contacto">
                             <span class="relative z-10 inline-flex items-center gap-3">Agenda tu asesoría
                                 gratuita</span>
                             <span
@@ -33,11 +33,11 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                     </div>
                     <div class="mt-3 md:hidden">
                         <a class="inline-flex items-center justify-center rounded-xl px-7 py-3 text-base font-medium border border-white/20 text-white hover:bg-white/10"
-                            href="proyectos.php">Ver proyectos</a>
+                            href="/proyectos">Ver proyectos</a>
                     </div>
                     <div class="mt-8 hidden md:flex items-center gap-4">
                         <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden"
-                            href="contacto.php">
+                            href="/contacto">
                             <span class="relative z-10 inline-flex items-center gap-3">Agenda tu asesoría
                                 gratuita</span>
                             <span
@@ -112,7 +112,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         competir hoy.</p>
                     <div class="mt-11">
                         <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden"
-                            href="contacto.php">
+                            href="/contacto">
                             <span class="relative z-10 inline-flex items-center gap-3">Agenda tu asesoría
                                 gratuita</span>
                             <span
@@ -423,7 +423,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </ul>
                         <div class="mt-9">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Preguntar por
                                     este plan</span>
                                 <span
@@ -520,7 +520,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </ul>
                         <div class="mt-9">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Preguntar por
                                     este plan</span>
                                 <span
@@ -622,7 +622,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </ul>
                         <div class="mt-9">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Preguntar por
                                     este plan</span>
                                 <span
@@ -686,7 +686,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </ul>
                         <div class="mt-9">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar este
                                     plan</span>
                                 <span
@@ -762,7 +762,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </ul>
                         <div class="mt-9">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar este
                                     plan</span>
                                 <span
@@ -845,7 +845,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </ul>
                         <div class="mt-9">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar este
                                     plan</span>
                                 <span
@@ -877,7 +877,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </div>
                         <div class="mt-7">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar este
                                     plan</span>
                                 <span
@@ -908,7 +908,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </div>
                         <div class="mt-7">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar este
                                     plan</span>
                                 <span
@@ -971,7 +971,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                         </ul>
                         <div class="mt-9">
                             <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                href="contacto.php">
+                                href="/contacto">
                                 <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar este
                                     plan</span>
                                 <span
@@ -993,7 +993,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                 <p class="text-zinc-500">Estamos trabajando en planes para esta categoría. Contáctanos y te armamos una
                     propuesta personalizada.</p>
                 <a class="mt-6 inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-electric-blue bg-white transition-all duration-500"
-                    href="contacto.php">Solicitar propuesta</a>
+                    href="/contacto">Solicitar propuesta</a>
             </div>
     </section>
 
@@ -1010,7 +1010,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
             </div>
             <div class="flex justify-end mb-12">
                 <a class="text-white/70 font-semibold flex items-center gap-2 hover:text-electric-blue transition-colors text-sm"
-                    href="proyectos.php">Ver portafolio completo <span
+                    href="/proyectos">Ver portafolio completo <span
                         class="material-symbols-outlined text-base">north_east</span></a>
             </div>
             <!-- Grid de 4 proyectos destacados -->
@@ -1050,7 +1050,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                     </div>
                 </a>
                 <!-- Proyecto: Próximo (placeholder) -->
-                <a class="group block opacity-60 hover:opacity-100 transition-all duration-500" href="contacto.php"
+                <a class="group block opacity-60 hover:opacity-100 transition-all duration-500" href="/contacto"
                     target="_blank">
                     <div
                         class="overflow-hidden rounded-2xl bg-white/5 border border-dashed border-white/20 mb-5 aspect-video flex items-center justify-center group-hover:border-electric-blue/40 transition-all duration-500">
@@ -1069,7 +1069,7 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                     </div>
                 </a>
                 <!-- Proyecto: Próximo (placeholder) -->
-                <a class="group block opacity-60 hover:opacity-100 transition-all duration-500" href="contacto.php"
+                <a class="group block opacity-60 hover:opacity-100 transition-all duration-500" href="/contacto"
                     target="_blank">
                     <div
                         class="overflow-hidden rounded-2xl bg-white/5 border border-dashed border-white/20 mb-5 aspect-video flex items-center justify-center group-hover:border-electric-blue/40 transition-all duration-500">
@@ -1305,14 +1305,14 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
                             generar crecimiento real para tu negocio.</p>
                         <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
                             <a class="inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-electric-blue hover:brightness-110 transition-all duration-500"
-                                href="contacto.php">Solicitar propuesta</a>
+                                href="/contacto">Solicitar propuesta</a>
                             <span class="text-sm text-white/60">Respuesta en menos de 24 horas</span>
                         </div>
                     </div>
                     <div class="relative flex justify-end items-end h-full">
                         <div
                             class="relative z-10 w-full max-w-xl aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
-                            <img src="assets/img/fotoCTA1.jpg" alt="" class="w-full h-full object-cover">
+                            <img src="/assets/img/fotoCTA1.jpg" alt="" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>

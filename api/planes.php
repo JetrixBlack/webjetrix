@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // Configuración de la página actual y título para el header
 $currentPage = 'planes';
 $pageTitle = 'Planes | Jetrix';
@@ -8,7 +8,7 @@ include 'includes/navbar.php';
 <main class="relative overflow-x-clip pt-14 md:pt-0">
     <!-- Fondo decorativo superior -->
     <section class="relative w-full min-h-[80svh] flex items-center justify-center">
-        <img src="assets/img/Fondo-planes.jpg" alt="" class="absolute w-full h-full object-cover">
+        <img src="/assets/img/Fondo-planes.jpg" alt="" class="absolute w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 text-center max-w-3xl px-4 py-6"
             style="text-shadow: 0 0 30px rgba(0,0,0,0.8), 0 0 60px rgba(0,0,0,0.5);">
@@ -187,7 +187,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </ul>
                             <div class="mt-9">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Preguntar
                                         por este plan</span>
                                     <span
@@ -286,7 +286,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </ul>
                             <div class="mt-9">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Preguntar
                                         por este plan</span>
                                     <span
@@ -388,7 +388,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </ul>
                             <div class="mt-9">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Preguntar
                                         por este plan</span>
                                     <span
@@ -453,7 +453,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </ul>
                             <div class="mt-9">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar
                                         este plan</span>
                                     <span
@@ -533,7 +533,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </ul>
                             <div class="mt-9">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar
                                         este plan</span>
                                     <span
@@ -619,7 +619,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </ul>
                             <div class="mt-9">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar
                                         este plan</span>
                                     <span
@@ -651,7 +651,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </div>
                             <div class="mt-7">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar
                                         este plan</span>
                                     <span
@@ -683,7 +683,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
 
                             <div class="mt-7">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar
                                         este plan</span>
                                     <span
@@ -747,7 +747,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                             </ul>
                             <div class="mt-9">
                                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden w-full"
-                                    href="contacto.php">
+                                    href="/contacto">
                                     <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Solicitar
                                         este plan</span>
                                     <span
@@ -921,14 +921,14 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
                                 generar crecimiento real para tu negocio.</p>
                             <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
                                 <a class="inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-electric-blue hover:brightness-110 transition-all duration-500"
-                                    href="contacto.php">Solicitar propuesta</a>
+                                    href="/contacto">Solicitar propuesta</a>
                                 <span class="text-sm text-white/60">Respuesta en menos de 24 horas</span>
                             </div>
                         </div>
                         <div class="relative flex justify-end items-end h-full">
                             <div
                                 class="relative z-10 w-full max-w-xl aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
-                                <img src="assets/img/fotoCTA1.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="/assets/img/fotoCTA1.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
@@ -944,7 +944,7 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
     <p class="text-zinc-500">Estamos trabajando en planes para esta categoría. Mientras tanto, contáctanos y te armamos
         una propuesta personalizada.</p>
     <a class="mt-6 inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04]"
-        href="contacto.php">Solicitar propuesta</a>
+        href="/contacto">Solicitar propuesta</a>
 </div>
 <!-- Script de filtros de planes -->
 <script>

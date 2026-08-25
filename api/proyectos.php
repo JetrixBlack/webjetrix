@@ -157,6 +157,6 @@ include 'includes/navbar.php';
     </section>
 </main>
 
-<script src="assets/js/projects-filter.js"></script>
+<script src="/assets/js/projects-filter.js"></script>
 <?php // Inclusión del pie de página
 include 'includes/footer.php'; ?>

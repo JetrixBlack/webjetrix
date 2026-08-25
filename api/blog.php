@@ -42,7 +42,7 @@ include 'includes/navbar.php';
             <!-- CTA para no perderse nada -->
             <div class="mt-12">
                 <a class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden"
-                    href="contacto.php">
+                    href="/contacto">
                     <span class="relative z-10 inline-flex items-center gap-3">Contáctanos para estar al día</span>
                     <span class="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
                 </a>
@@ -58,7 +58,7 @@ include 'includes/navbar.php';
                 <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] text-white">¿Listo para <span class="text-electric-blue">empezar?</span></h2>
                 <p class="mt-4 text-white/70 text-lg">Agenda una llamada y descubre si Jetrix es para tu negocio.</p>
             </div>
-            <a class="inline-flex items-center justify-center rounded-xl px-10 py-5 text-lg font-semibold text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] shrink-0" href="contacto.php">Agendar llamada</a>
+            <a class="inline-flex items-center justify-center rounded-xl px-10 py-5 text-lg font-semibold text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] shrink-0" href="/contacto">Agendar llamada</a>
         </div>
     </div>
 </section>

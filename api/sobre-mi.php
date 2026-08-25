@@ -6,7 +6,7 @@ include 'includes/navbar.php';
 ?>
 <main class="relative overflow-x-clip pt-14 md:pt-0">
     <section class="relative w-full min-h-[60svh] md:min-h-[70svh] flex items-center justify-center">
-        <img src="assets/img/Fondo-Nosotros.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <img src="/assets/img/Fondo-Nosotros.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative z-10 w-full px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-24 md:py-32">
             <div class="max-w-3xl mx-auto flex flex-col items-center text-center">
@@ -168,7 +168,7 @@ include 'includes/navbar.php';
                     <p class="mt-6 text-lg text-zinc-300 leading-relaxed">Estoy listo para ayudarte a construir la
                         solución digital que tu negocio necesita.</p>
                     <a class="group relative inline-flex items-center justify-center rounded-xl px-8 py-4 mt-8 text-lg text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden focus:outline-none"
-                        href="contacto.php">
+                        href="/contacto">
                         <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Contáctame <svg
                                 class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

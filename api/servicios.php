@@ -106,7 +106,7 @@ include 'includes/navbar.php';
                 <div class="w-full md:w-1/2 relative">
                     <div class="relative step-number">01</div>
                     <div class="timeline-img rounded-2xl overflow-hidden bg-white border border-zinc-200 shadow-lg p-6">
-                        <img src="assets/img/Desarrollo-Web.png" alt="Desarrollo Web" class="w-full max-w-sm mx-auto object-contain">
+                        <img src="/assets/img/Desarrollo-Web.png" alt="Desarrollo Web" class="w-full max-w-sm mx-auto object-contain">
                     </div>
                 </div>
                 <!-- Dot timeline (solo desktop) -->
@@ -125,7 +125,7 @@ include 'includes/navbar.php';
                         <li class="flex items-center gap-3 text-zinc-600"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Integración con sistemas existentes</li>
                     </ul>
                     <div class="mt-8">
-                        <a href="planes.php" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
+                        <a href="/planes" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
                             <span class="relative z-10 inline-flex items-center gap-3">Ver planes</span>
                             <span class="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
                         </a>
@@ -139,7 +139,7 @@ include 'includes/navbar.php';
                 <div class="w-full md:w-1/2 relative">
                     <div class="relative step-number">02</div>
                     <div class="timeline-img rounded-2xl overflow-hidden bg-white border border-zinc-200 shadow-lg p-6">
-                        <img src="assets/img/Sistemas-a-medida.png" alt="Sistemas a Medida" class="w-full max-w-sm mx-auto object-contain">
+                        <img src="/assets/img/Sistemas-a-medida.png" alt="Sistemas a Medida" class="w-full max-w-sm mx-auto object-contain">
                     </div>
                 </div>
                 <!-- Dot timeline (solo desktop) -->
@@ -158,7 +158,7 @@ include 'includes/navbar.php';
                         <li class="flex items-center gap-3 text-zinc-600 md:justify-end"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Roles, permisos y reportes exportables</li>
                     </ul>
                     <div class="mt-8 md:flex md:justify-end">
-                        <a href="planes.php" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
+                        <a href="/planes" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
                             <span class="relative z-10 inline-flex items-center gap-3">Ver planes</span>
                             <span class="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
                         </a>
@@ -172,7 +172,7 @@ include 'includes/navbar.php';
                 <div class="w-full md:w-1/2 relative">
                     <div class="relative step-number">03</div>
                     <div class="timeline-img rounded-2xl overflow-hidden bg-white border border-zinc-200 shadow-lg p-6">
-                        <img src="assets/img/Chatbots.png" alt="Chatbots IA" class="w-full max-w-sm mx-auto object-contain">
+                        <img src="/assets/img/Chatbots.png" alt="Chatbots IA" class="w-full max-w-sm mx-auto object-contain">
                     </div>
                 </div>
                 <!-- Dot timeline (solo desktop) -->
@@ -191,7 +191,7 @@ include 'includes/navbar.php';
                         <li class="flex items-center gap-3 text-zinc-600"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Integración con WhatsApp y web</li>
                     </ul>
                     <div class="mt-8">
-                        <a href="planes.php" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
+                        <a href="/planes" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
                             <span class="relative z-10 inline-flex items-center gap-3">Ver planes</span>
                             <span class="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
                         </a>
@@ -205,7 +205,7 @@ include 'includes/navbar.php';
                 <div class="w-full md:w-1/2 relative">
                     <div class="relative step-number">04</div>
                     <div class="timeline-img rounded-2xl overflow-hidden bg-navy-dark border border-white/10 shadow-lg p-6">
-                        <img src="assets/img/Automatizacion.png" alt="Automatizaciones" class="w-full max-w-sm mx-auto object-contain">
+                        <img src="/assets/img/Automatizacion.png" alt="Automatizaciones" class="w-full max-w-sm mx-auto object-contain">
                     </div>
                 </div>
                 <!-- Dot timeline (solo desktop) -->
@@ -224,7 +224,7 @@ include 'includes/navbar.php';
                         <li class="flex items-center gap-3 text-zinc-600 md:justify-end"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Workflows inteligentes con n8n</li>
                     </ul>
                     <div class="mt-8 md:flex md:justify-end">
-                        <a href="contacto.php" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
+                        <a href="/contacto" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
                             <span class="relative z-10 inline-flex items-center gap-3">Consultar</span>
                             <span class="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
                         </a>
@@ -243,7 +243,7 @@ include 'includes/navbar.php';
                     <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] text-white">¿Listo para <span class="text-electric-blue">empezar?</span></h2>
                     <p class="mt-4 text-white/70 text-lg">Agenda una llamada y descubre si Jetrix es para tu negocio.</p>
                 </div>
-                <a class="inline-flex items-center justify-center rounded-xl px-10 py-5 text-lg font-semibold text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] shrink-0" href="contacto.php">Agendar llamada</a>
+                <a class="inline-flex items-center justify-center rounded-xl px-10 py-5 text-lg font-semibold text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] shrink-0" href="/contacto">Agendar llamada</a>
             </div>
         </div>
     </section>
