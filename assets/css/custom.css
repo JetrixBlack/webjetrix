@@ -1,0 +1,168 @@
+/* Fuente principal para el cuerpo del sitio */
+body { font-family: 'Raleway', sans-serif; }
+/* Fuente para todos los encabezados */
+h1, h2, h3, h4, h5, h6 { font-family: 'Exo 2', sans-serif; }
+/* Configuración de iconos Material Symbols */
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+/* Scrollbar personalizada - ancho delgada */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+/* Track de scrollbar transparente */
+::-webkit-scrollbar-track { background: transparent; }
+/* Thumb de scrollbar en azul eléctrico semitransparente */
+::-webkit-scrollbar-thumb { background: rgba(20, 184, 166, 0.3); border-radius: 10px; }
+/* Thumb más visible al hover */
+::-webkit-scrollbar-thumb:hover { background: rgba(20, 184, 166, 0.5); }
+
+/* Animación de fadeIn rápida - sube 20px mientras aparece */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
+
+/* Animación de fadeIn lenta - sube 30px mientras aparece */
+@keyframes fadeInSlow { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in-slow { animation: fadeInSlow 0.8s ease-out forwards; }
+
+/* Animación suave al abrir un detalle (FAQ) */
+details[open] p { animation: fadeInSlow 0.5s ease-out; }
+
+
+
+/* Responsive images */
+img, video, iframe, embed { max-width: 100%; height: auto; isolation: isolate; }
+
+/* Border-radius más sutil en tarjetas */
+.rounded-\[30px\] { border-radius: 0.75rem !important; }
+
+/* Word break for long strings */
+p, h1, h2, h3, h4, h5, h6, li, .text-content { overflow-wrap: break-word; word-break: break-word; }
+
+/* Blinking cursor for typewriter effect */
+.typewriter-cursor {
+    display: inline-block;
+    animation: blink 0.4s step-end infinite;
+    font-weight: 300;
+    color: #14B8A6;
+    font-size: 0.7em;
+    vertical-align: middle;
+    margin-top: -0.15em;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Scroll indicator - mouse-style */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+.scroll-indicator.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.scroll-mouse {
+    width: 28px;
+    height: 44px;
+    border: 3px solid #5eead4;
+    border-radius: 14px;
+    position: relative;
+    filter: drop-shadow(0 0 16px rgba(20,184,166,0.8)) drop-shadow(0 0 50px rgba(20,184,166,0.3));
+    animation: mouseBob 2s ease-in-out infinite;
+}
+@keyframes mouseBob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+}
+.scroll-wheel {
+    width: 5px;
+    height: 9px;
+    background: #5eead4;
+    border-radius: 3px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: mouseWheel 1.5s ease-in-out infinite;
+    box-shadow: 0 0 8px rgba(20,184,166,0.6);
+}
+@keyframes mouseWheel {
+    0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(18px); }
+}
+
+/* Tech carousel - horizontal infinite scroll */
+.tech-carousel {
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+.tech-track {
+    animation: techScroll 25s linear infinite;
+    flex-shrink: 0;
+}
+.tech-carousel:hover .tech-track {
+    animation-play-state: paused;
+}
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem 1.75rem;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 1rem;
+    min-width: 110px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.tech-item:hover {
+    border-color: #14B8A6;
+    box-shadow: 0 4px 20px rgba(20,184,166,0.15);
+    transform: translateY(-2px);
+}
+.tech-item span:last-child {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0F172A;
+    white-space: nowrap;
+}
+@media (max-width: 640px) {
+    .tech-item {
+        min-width: 80px;
+        padding: 0.75rem 0.75rem;
+    }
+    .tech-item span:last-child {
+        font-size: 0.7rem;
+    }
+    .scroll-indicator {
+        bottom: 1.5rem;
+    }
+    .scroll-mouse {
+        width: 36px;
+        height: 54px;
+        border-width: 3px;
+        border-radius: 18px;
+    }
+    .scroll-wheel {
+        width: 6px;
+        height: 11px;
+        top: 10px;
+    }
+    @keyframes mouseWheel {
+        0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+        100% { opacity: 0; transform: translateX(-50%) translateY(22px); }
+    }
+}
+
+@keyframes techScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

@@ -1,0 +1,28 @@
+# Environment
+.env
+.env.example
+
+# Dependencies
+node_modules/
+vendor/
+
+# Uploads
+uploads/
+storage/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# PHP
+*.cache
