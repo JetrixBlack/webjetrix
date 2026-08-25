@@ -115,7 +115,7 @@
     }
 
     // Obtiene tasas de cambio desde la API, con fallback a valores por defecto
-    fetch('api/rates.php')
+    fetch('/api/rates.php')
         .then(function(r) { return r.json(); })
         .then(function(data) {
             rates = data;
