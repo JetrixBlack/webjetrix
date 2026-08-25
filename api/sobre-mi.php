@@ -1,8 +1,8 @@
 <?php
 $currentPage = 'sobre-mi';
 $pageTitle = 'Sobre mí | Jetrix';
-include 'includes/header.php';
-include 'includes/navbar.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 <main class="relative overflow-x-clip pt-14 md:pt-0">
     <section class="relative w-full min-h-[60svh] md:min-h-[70svh] flex items-center justify-center">
@@ -183,4 +183,4 @@ include 'includes/navbar.php';
         </div>
     </section>
 </main>
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

@@ -9,8 +9,8 @@ if ($page === 'terminos') {
 }
 
 $currentPage = '';
-include 'includes/header.php';
-include 'includes/navbar.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 
 <main class="pt-14 md:pt-0">
@@ -78,4 +78,4 @@ include 'includes/navbar.php';
     </section>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

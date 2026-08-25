@@ -2,8 +2,8 @@
 // Configuración de la página actual y título para el header
 $currentPage = 'proyectos';
 $pageTitle = 'Portafolio | Jetrix';
-include 'includes/header.php';
-include 'includes/navbar.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 <main class="pt-14 md:pt-0">
     <section class="pt-40 pb-20 lg:pt-48 lg:pb-28 bg-[#F7F7F4]">
@@ -159,4 +159,4 @@ include 'includes/navbar.php';
 
 <script src="/assets/js/projects-filter.js"></script>
 <?php // Inclusión del pie de página
-include 'includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php'; ?>

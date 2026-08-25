@@ -2,8 +2,8 @@
 // Configuración: define la página actual, el tótulo e incluye componentes del layout
 $currentPage = 'inicio';
 $pageTitle = 'Jetrix | Desarrollo Web que Convierte'; // Tótulo de la página para SEO y la pestaña del navegador
-include 'includes/header.php'; // Incluye el <head> con meta tags, estilos y librerías
-include 'includes/navbar.php'; // Incluye la barra de navegación principal
+include __DIR__ . '/../includes/header.php'; // Incluye el <head> con meta tags, estilos y librerías
+include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación principal
 ?>
 <main class="relative overflow-x-clip">
     <!-- HERO: Sección principal con video de fondo, tótulo llamativo y botones CTA para asesoría gratuita -->
@@ -1497,4 +1497,4 @@ include 'includes/navbar.php'; // Incluye la barra de navegación principal
     })();
 </script>
 <?php // Footer
-include 'includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php'; ?>

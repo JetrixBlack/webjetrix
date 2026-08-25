@@ -2,8 +2,8 @@
 // Configuración de la página actual y título para el header
 $currentPage = 'servicios';
 $pageTitle = 'Servicios | Jetrix';
-include 'includes/header.php';
-include 'includes/navbar.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 <style>
 /* Timeline vertical - línea central con animación */
@@ -264,4 +264,4 @@ include 'includes/navbar.php';
     checkVisible();
 })();
 </script>
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

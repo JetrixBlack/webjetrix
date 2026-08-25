@@ -2,8 +2,8 @@
 // Configuración de la página actual y título para el header
 $currentPage = 'blog';
 $pageTitle = 'Blog | Jetrix — Próximamente';
-include 'includes/header.php';
-include 'includes/navbar.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 <main class="pt-14 md:pt-0">
     <!-- Próximamente - Página de blog en preparación -->
@@ -82,4 +82,4 @@ include 'includes/navbar.php';
     setInterval(update, 60000);
 })();
 </script>
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

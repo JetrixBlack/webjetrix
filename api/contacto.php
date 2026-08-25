@@ -2,8 +2,8 @@
 // Configuración de la página actual y título para el header
 $currentPage = 'contacto';
 $pageTitle = 'Contacto | Jetrix';
-include 'includes/header.php';
-include 'includes/navbar.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 <main class="pt-14 md:pt-0">
     <!-- Hero - Cabecera de la página de contacto con título y descripción -->
@@ -82,4 +82,4 @@ include 'includes/navbar.php';
     </section>
 </main>
 <?php // Inclusión del pie de página
-include 'includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php'; ?>

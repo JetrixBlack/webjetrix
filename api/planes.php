@@ -2,8 +2,8 @@
 // Configuración de la página actual y título para el header
 $currentPage = 'planes';
 $pageTitle = 'Planes | Jetrix';
-include 'includes/header.php';
-include 'includes/navbar.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 <main class="relative overflow-x-clip pt-14 md:pt-0">
     <!-- Fondo decorativo superior -->
@@ -1200,4 +1200,4 @@ class="inline-flex flex-wrap sm:flex-nowrap items-center gap-3 bg-gradient-to-r 
     })();
 </script>
 <?php // Inclusión del pie de página
-include 'includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php'; ?>
