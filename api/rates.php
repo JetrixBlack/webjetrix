@@ -26,7 +26,7 @@ curl_setopt_array($ch, [
     CURLOPT_USERAGENT => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
 ]);
 $html = curl_exec($ch);
-curl_close($ch);
+
 
 if ($html) {
     $dom = new DOMDocument();
