@@ -14,8 +14,8 @@
     { "src": "/proyectos", "dest": "/api/proyectos.php" },
     { "src": "/servicios", "dest": "/api/servicios.php" },
     { "src": "/sobre-mi", "dest": "/api/sobre-mi.php" },
-    { "src": "/privacidad", "dest": "/api/privacidad.php" },
-    { "src": "/terminos", "dest": "/api/terminos.php" },
+    { "src": "/privacidad", "dest": "/api/legal.php?page=privacidad" },
+    { "src": "/terminos", "dest": "/api/legal.php?page=terminos" },
     { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
