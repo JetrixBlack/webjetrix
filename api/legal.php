@@ -3,8 +3,12 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'privacidad';
 
 if ($page === 'terminos') {
     $pageTitle = 'Términos y Condiciones | Jetrix';
+    $pageDescription = 'Consulta los términos y condiciones de uso de los servicios de desarrollo web y software de Jetrix.';
+    $canonicalUrl = 'https://webjetrix.com/terminos';
 } else {
     $pageTitle = 'Política de Privacidad | Jetrix';
+    $pageDescription = 'Conoce nuestra política de privacidad y protección de datos en Jetrix.';
+    $canonicalUrl = 'https://webjetrix.com/privacidad';
     $page = 'privacidad';
 }
 

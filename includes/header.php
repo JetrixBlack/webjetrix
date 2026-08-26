@@ -1,15 +1,67 @@
+<?php
+// Configuración y valores por defecto para SEO On-Page
+$defaultTitle = 'Jetrix | Desarrollo Web, Software a Medida y Chatbots IA';
+$defaultDesc = 'En Jetrix desarrollamos páginas web de alto impacto, sistemas de software a medida, e-commerce y chatbots con Inteligencia Artificial que convierten visitas en clientes reales.';
+$defaultKeywords = 'desarrollo web, diseño web, software a medida, chatbots con IA, paginas web venezuela, ecommerce, programacion web, agencias de desarrollo web';
+$siteBaseUrl = 'https://webjetrix.com';
+
+$currentTitle = $pageTitle ?? $defaultTitle;
+$currentDesc = $pageDescription ?? $defaultDesc;
+$currentKeywords = $pageKeywords ?? $defaultKeywords;
+$currentCanonical = $canonicalUrl ?? ($siteBaseUrl . ($_SERVER['REQUEST_URI'] ?? ''));
+$currentOgImage = $ogImage ?? ($siteBaseUrl . '/assets/img/Logo_Jetrix.png');
+?>
 <!DOCTYPE html>
-<!-- Declaraci├│n del tipo de documento HTML5 -->
 <html class="scroll-smooth" lang="es">
-<!-- scroll-smooth activa desplazamiento suave; lang="es" define idioma espa├▒ol -->
 
 <head>
     <meta charset="utf-8" />
-    <!-- Codificaci├│n de caracteres UTF-8 -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <!-- Meta tag para dise├▒o responsive en m├│viles -->
-    <title><?= htmlspecialchars($pageTitle ?? 'Jetrix | Desarrollo Web que Convierte') ?></title>
-    <!-- T├¡tulo din├ímico de la p├ígina; usa valor por defecto si no se define $pageTitle -->
+    
+    <!-- SEO Básico y Título -->
+    <title><?= htmlspecialchars($currentTitle) ?></title>
+    <meta name="description" content="<?= htmlspecialchars($currentDesc) ?>" />
+    <meta name="keywords" content="<?= htmlspecialchars($currentKeywords) ?>" />
+    <meta name="author" content="Jetrix" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="<?= htmlspecialchars($currentCanonical) ?>" />
+
+    <!-- Open Graph / Redes Sociales y WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?= htmlspecialchars($currentCanonical) ?>" />
+    <meta property="og:title" content="<?= htmlspecialchars($currentTitle) ?>" />
+    <meta property="og:description" content="<?= htmlspecialchars($currentDesc) ?>" />
+    <meta property="og:image" content="<?= htmlspecialchars($currentOgImage) ?>" />
+    <meta property="og:site_name" content="Jetrix" />
+    <meta property="og:locale" content="es_LA" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="<?= htmlspecialchars($currentCanonical) ?>" />
+    <meta name="twitter:title" content="<?= htmlspecialchars($currentTitle) ?>" />
+    <meta name="twitter:description" content="<?= htmlspecialchars($currentDesc) ?>" />
+    <meta name="twitter:image" content="<?= htmlspecialchars($currentOgImage) ?>" />
+
+    <!-- Datos Estructurados Globales (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Jetrix",
+      "image": "https://webjetrix.com/assets/img/Logo_Jetrix.png",
+      "url": "https://webjetrix.com",
+      "telephone": "+573001234567",
+      "email": "contacto@webjetrix.com",
+      "priceRange": "$$",
+      "description": "Agencia de desarrollo web, software a medida, e-commerce y chatbots con Inteligencia Artificial.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "VE"
+      }
+    }
+    </script>
+
+    <!-- CDN de Tailwind CSS con plugins de formularios y container queries -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- CDN de Tailwind CSS con plugins de formularios y container queries -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"

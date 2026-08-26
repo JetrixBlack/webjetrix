@@ -1,14 +1,17 @@
 <?php
-// Configuración de la página actual y título para el header
+// Configuración de la página actual y SEO para Planes y Precios
 $currentPage = 'planes';
-$pageTitle = 'Planes | Jetrix';
+$pageTitle = 'Planes y Precios de Desarrollo Web, Software y Chatbots | Jetrix';
+$pageDescription = 'Conoce nuestros planes y precios transparentes para desarrollo de páginas web, sistemas a medida y chatbots con IA. Cotiza en USD, EUR o Bolívares en tiempo real.';
+$pageKeywords = 'precios paginas web, planes desarrollo web, costo crear pagina web, presupuesto software a medida, cotizar chatbot ia';
+$canonicalUrl = 'https://webjetrix.com/planes';
 include __DIR__ . '/../includes/header.php';
 include __DIR__ . '/../includes/navbar.php';
 ?>
 <main class="relative overflow-x-clip pt-14 md:pt-0">
     <!-- Fondo decorativo superior -->
     <section class="relative w-full min-h-[80svh] flex items-center justify-center">
-        <img src="/assets/img/Fondo-planes.jpg" alt="" class="absolute w-full h-full object-cover">
+        <img src="/assets/img/Fondo-planes.jpg" alt="Planes y precios de desarrollo web Jetrix" class="absolute w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 text-center max-w-3xl px-4 py-6"
             style="text-shadow: 0 0 30px rgba(0,0,0,0.8), 0 0 60px rgba(0,0,0,0.5);">

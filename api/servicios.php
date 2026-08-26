@@ -1,7 +1,10 @@
 <?php
-// Configuración de la página actual y título para el header
+// Configuración de la página actual y SEO para Servicios
 $currentPage = 'servicios';
-$pageTitle = 'Servicios | Jetrix';
+$pageTitle = 'Servicios de Desarrollo Web, Software y Chatbots IA | Jetrix';
+$pageDescription = 'Descubre nuestros servicios de desarrollo web corporativo, software a medida, e-commerce, integraciones de API y chatbots inteligentes para empresas.';
+$pageKeywords = 'servicios desarrollo web, desarrollo software a medida, creacion chatbots ia, diseno ecommerce, integraciones api';
+$canonicalUrl = 'https://webjetrix.com/servicios';
 include __DIR__ . '/../includes/header.php';
 include __DIR__ . '/../includes/navbar.php';
 ?>

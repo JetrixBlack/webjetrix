@@ -16,6 +16,9 @@
     { "src": "/proyectos", "dest": "/api/proyectos.php" },
     { "src": "/servicios", "dest": "/api/servicios.php" },
     { "src": "/sobre-mi", "dest": "/api/sobre-mi.php" },
+    { "src": "/nosotros", "dest": "/api/sobre-mi.php" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
     { "src": "/privacidad", "dest": "/api/legal.php?page=privacidad" },
     { "src": "/terminos", "dest": "/api/legal.php?page=terminos" },
     { "src": "/(.*)", "dest": "/api/index.php" }

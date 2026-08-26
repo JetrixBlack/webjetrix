@@ -1,7 +1,10 @@
 <?php
-// Configuración de la página actual y título para el header
+// Configuración de la página actual y SEO para Contacto
 $currentPage = 'contacto';
-$pageTitle = 'Contacto | Jetrix';
+$pageTitle = 'Contacto y Asesoría Gratuita de Desarrollo Web | Jetrix';
+$pageDescription = 'Agenda una asesoría gratuita de 15 minutos con Jetrix. Cuéntanos sobre tu proyecto y recibe una propuesta personalizada para tu página web o sistema.';
+$pageKeywords = 'contacto desarrollo web, agendar asesoria web, cotizar pagina web, contactar programador, presupuesto web';
+$canonicalUrl = 'https://webjetrix.com/contacto';
 include __DIR__ . '/../includes/header.php';
 include __DIR__ . '/../includes/navbar.php';
 ?>

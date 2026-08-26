@@ -28,8 +28,7 @@
             <!-- Columna 3: Enlaces institucionales / Empresa -->
             <div class="flex flex-col gap-4">
                 <h4 class="font-bold text-white uppercase tracking-wider text-sm">Empresa</h4>
-                <a class="text-white/50 hover:text-electric-blue transition-colors text-sm" href="/sobre-mi">Sobre
-                    mí</a>
+                <a class="text-white/50 hover:text-electric-blue transition-colors text-sm" href="/nosotros">Nosotros</a>
                 <a class="text-white/50 hover:text-electric-blue transition-colors text-sm" href="/proyectos">Casos
                     de éxito</a>
                 <a class="text-white/50 hover:text-electric-blue transition-colors text-sm" href="/blog">Blog</a>

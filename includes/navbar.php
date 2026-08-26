@@ -9,10 +9,10 @@
                 href="/">
                 <span class="relative z-10">Inicio</span>
             </a>
-            <!-- Enlace Sobre m├¡ -->
-            <a class="group relative px-2.5 lg:px-4 py-2.5 rounded-full text-[13px] lg:text-[15px] font-normal text-white/75 transition-all duration-300 hover:text-white hover:bg-white/5 whitespace-nowrap <?= $currentPage === 'sobre-mi' ? 'text-white bg-white/5' : '' ?>"
-                href="/sobre-mi">
-                <span class="relative z-10">Sobre Mí</span>
+            <!-- Enlace Nosotros -->
+            <a class="group relative px-2.5 lg:px-4 py-2.5 rounded-full text-[13px] lg:text-[15px] font-normal text-white/75 transition-all duration-300 hover:text-white hover:bg-white/5 whitespace-nowrap <?= in_array($currentPage, ['sobre-mi', 'nosotros']) ? 'text-white bg-white/5' : '' ?>"
+                href="/nosotros">
+                <span class="relative z-10">Nosotros</span>
             </a>
             <!-- Enlace Planes -->
             <a class="group relative px-2.5 lg:px-4 py-2.5 rounded-full text-[13px] lg:text-[15px] font-normal text-white/75 transition-all duration-300 hover:text-white hover:bg-white/5 whitespace-nowrap <?= $currentPage === 'planes' ? 'text-white bg-white/5' : '' ?>"
@@ -111,8 +111,8 @@
         <div class="space-y-1">
             <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'inicio' ? 'text-electric-blue' : 'text-white' ?>"
                 href="/">Inicio</a>
-            <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'sobre-mi' ? 'text-electric-blue' : 'text-white/80' ?>"
-                href="/sobre-mi">Sobre Mí</a>
+            <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= in_array($currentPage, ['sobre-mi', 'nosotros']) ? 'text-electric-blue' : 'text-white/80' ?>"
+                href="/nosotros">Nosotros</a>
             <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'planes' ? 'text-electric-blue' : 'text-white/80' ?>"
                 href="/planes">Planes</a>
             <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'blog' ? 'text-electric-blue' : 'text-white/80' ?>"

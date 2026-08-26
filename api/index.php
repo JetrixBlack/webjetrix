@@ -1,9 +1,12 @@
 <?php
-// Configuración: define la página actual, el tótulo e incluye componentes del layout
+// Configuración de metadatos SEO específicos de la página principal
 $currentPage = 'inicio';
-$pageTitle = 'Jetrix | Desarrollo Web que Convierte'; // Tótulo de la página para SEO y la pestaña del navegador
-include __DIR__ . '/../includes/header.php'; // Incluye el <head> con meta tags, estilos y librerías
-include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación principal
+$pageTitle = 'Jetrix | Agencia de Desarrollo Web, Software a Medida y Chatbots IA';
+$pageDescription = 'Transformamos visitas en clientes reales. En Jetrix creamos páginas web de alto rendimiento, sistemas a medida, e-commerce y chatbots inteligentes con IA.';
+$pageKeywords = 'desarrollo web, diseño web profesional, software a medida, chatbots con IA, paginas web venezuela, ecommerce, agencias de desarrollo web';
+$canonicalUrl = 'https://webjetrix.com/';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../includes/navbar.php';
 ?>
 <main class="relative overflow-x-clip">
     <!-- HERO: Sección principal con video de fondo, tótulo llamativo y botones CTA para asesoría gratuita -->
@@ -1155,7 +1158,7 @@ include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación 
                     <details class="group p-6">
                         <summary
                             class="flex items-center justify-between cursor-pointer text-deep-slate font-semibold text-lg">
-                            <span>óCuánto tiempo tarda el desarrollo de una página web?</span>
+                            <span>¿Cuánto tiempo tarda el desarrollo de una página web?</span>
                             <svg class="w-5 h-5 transition-all duration-500 group-open:rotate-180 text-electric-blue shrink-0"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2">
@@ -1172,7 +1175,7 @@ include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación 
                     <details class="group p-6">
                         <summary
                             class="flex items-center justify-between cursor-pointer text-deep-slate font-semibold text-lg">
-                            <span>óCuánto cuesta una página web profesional?</span>
+                            <span>¿Cuánto cuesta una página web profesional?</span>
                             <svg class="w-5 h-5 transition-all duration-500 group-open:rotate-180 text-electric-blue shrink-0"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2">
@@ -1205,7 +1208,7 @@ include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación 
                     <details class="group p-6">
                         <summary
                             class="flex items-center justify-between cursor-pointer text-deep-slate font-semibold text-lg">
-                            <span>¿El SEO estó incluido en el desarrollo web?</span>
+                            <span>¿El SEO está incluido en el desarrollo web?</span>
                             <svg class="w-5 h-5 transition-all duration-500 group-open:rotate-180 text-electric-blue shrink-0"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2">
@@ -1213,7 +1216,7 @@ include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación 
                             </svg>
                         </summary>
                         <p class="mt-4 text-zinc-500 leading-relaxed">Sí. Todas nuestras páginas se entregan con
-                            optimización SEO bósica para mejorar visibilidad en Google desde el lanzamiento.</p>
+                            optimización SEO básica para mejorar visibilidad en Google desde el lanzamiento.</p>
                     </details>
                 </div>
                 <div class="rounded-2xl border border-zinc-200 transition-all duration-500 hover:border-electric-blue animate-fade-in-slow bg-white"
@@ -1228,7 +1231,7 @@ include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación 
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </summary>
-                        <p class="mt-4 text-zinc-500 leading-relaxed">Sí. Nuestros servicios estón pensados para crecer
+                        <p class="mt-4 text-zinc-500 leading-relaxed">Sí. Nuestros servicios están pensados para crecer
                             contigo. Puedes agregar ecommerce, automatizaciones o nuevas funcionalidades cuando lo
                             necesites.</p>
                     </details>
@@ -1285,6 +1288,79 @@ include __DIR__ . '/../includes/navbar.php'; // Incluye la barra de navegación 
                 </div>
             </div>
         </div>
+        <!-- Schema JSON-LD para FAQPage (Google Rich Snippets) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo tarda el desarrollo de una página web?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dependiendo del plan, la entrega suele estar entre 3 y 7 días hábiles. En sistemas web puede extenderse según la complejidad, pero siempre definimos tiempos claros desde el inicio."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto cuesta una página web profesional?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El precio depende del tipo de proyecto, funcionalidades y nivel de personalización. Ofrecemos planes claros y adaptados a cada negocio."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué incluye un servicio de desarrollo web?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Incluye diseño web profesional, estructura optimizada, configuración técnica, enfoque en conversión y acompañamiento inicial."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿El SEO está incluido en el desarrollo web?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Todas nuestras páginas se entregan con optimización SEO básica para mejorar visibilidad en Google desde el lanzamiento."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Puedo escalar o cambiar de plan después?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Nuestros servicios están pensados para crecer contigo. Puedes agregar ecommerce, automatizaciones o nuevas funcionalidades cuando lo necesites."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Ofrecen soporte después de la entrega?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Incluimos soporte inicial y opciones de acompañamiento mensual para mejoras, ajustes y optimización continua."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Ya tengo dominio y hosting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No hay problema. Nos encargamos de gestionarlo o trabajamos con lo que ya tengas. Algunos planes incluyen dominio y hosting por el primer año."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo funciona la activación del chatbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El chatbot se activa como complemento a tu plan. Al integrarlo, obtienes automatización, atención 24/7 y captura automática de leads para tu negocio."
+              }
+            }
+          ]
+        }
+        </script>
     </section>
 
     <!-- CTA FINAL: Llamado a la acción con propuesta, imagen y botón de contacto -->

@@ -1,7 +1,10 @@
 <?php
-// Configuración de la página actual y título para el header
+// Configuración de la página actual y SEO para Portafolio / Proyectos
 $currentPage = 'proyectos';
-$pageTitle = 'Portafolio | Jetrix';
+$pageTitle = 'Portafolio de Proyectos y Casos de Éxito | Jetrix';
+$pageDescription = 'Explora nuestro portafolio de proyectos: páginas web de alto impacto, tiendas online e-commerce, sistemas a medida y chatbots interactivos.';
+$pageKeywords = 'portafolio desarrollo web, proyectos paginas web, casos de exito desarrollo web, software portfolio, diseno web ejemplos';
+$canonicalUrl = 'https://webjetrix.com/proyectos';
 include __DIR__ . '/../includes/header.php';
 include __DIR__ . '/../includes/navbar.php';
 ?>
@@ -47,7 +50,7 @@ include __DIR__ . '/../includes/navbar.php';
                         <h3 class="text-lg font-semibold text-deep-slate mb-3 leading-7">WebJetrix</h3>
                         <p class="text-sm text-zinc-500 leading-[22.75px] mb-6">Rediseño completo de sitio web corporativo enfocado en conversión y rendimiento.</p>
                         <div class="mt-auto flex items-center justify-between">
-                            <a href="#" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-black text-white text-sm font-medium transition-all duration-300 hover:bg-zinc-800">Ver proyecto</a>
+                            <a href="/" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-black text-white text-sm font-medium transition-all duration-300 hover:bg-zinc-800">Ver proyecto</a>
                             <span class="text-xs text-zinc-400 capitalize">Página Web</span>
                         </div>
                     </div>

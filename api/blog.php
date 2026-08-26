@@ -1,7 +1,10 @@
 <?php
-// Configuración de la página actual y título para el header
+// Configuración de la página actual y SEO para el Blog
 $currentPage = 'blog';
-$pageTitle = 'Blog | Jetrix — Próximamente';
+$pageTitle = 'Blog de Tecnología, Desarrollo Web e IA | Jetrix';
+$pageDescription = 'Artículos y guías sobre desarrollo web, diseño UI/UX, chatbots con inteligencia artificial, automatizaciones y estrategia digital para hacer crecer tu negocio.';
+$pageKeywords = 'blog desarrollo web, articulos tecnologia, guias chatbot ia, diseno web tendencias, automatizacion digital';
+$canonicalUrl = 'https://webjetrix.com/blog';
 include __DIR__ . '/../includes/header.php';
 include __DIR__ . '/../includes/navbar.php';
 ?>
