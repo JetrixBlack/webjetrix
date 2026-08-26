@@ -51,13 +51,13 @@
                         "stack-sm": "12px", "section-gap": "120px", "gutter": "24px",
                         "margin-desktop": "64px", "unit": "4px", "stack-lg": "48px"
                     },
-                    // Familias tipogr├íficas del dise├▒o
+                    // Familias tipograficas del diseño
                     fontFamily: {
                         "headline-xl": ["Exo 2"], "display-lg-mobile": ["Exo 2"], "label-sm": ["Exo 2"],
                         "code-md": ["Exo 2"], "body-lg": ["Raleway"], "display-lg": ["Exo 2"],
                         "headline-lg": ["Exo 2"], "body-md": ["Raleway"]
                     },
-                    // Escala de tama├▒os de texto con sus propiedades
+                    // Escala de tamaños de texto con sus propiedades
                     fontSize: {
                         "headline-xl": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }],
                         "display-lg-mobile": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
@@ -81,45 +81,59 @@
 </head>
 
 <body class="bg-background text-on-background selection:bg-electric-blue selection:text-white font-body-md">
-<!-- Preloader: pantalla de carga con logo y barra circular -->
-<div id="preloader" class="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#070B14] transition-opacity duration-500">
-    <!-- Logo principal -->
-    <img src="assets/img/Logo_Jetrix.png" alt="Jetrix" class="w-28 md:w-36 mb-8 animate-pulse">
-    <!-- Barra de carga circular SVG -->
-    <svg class="w-12 h-12 md:w-14 md:h-14" viewBox="0 0 50 50">
-        <circle cx="25" cy="25" r="20" fill="none" stroke="rgba(20,184,166,0.15)" stroke-width="4"/>
-        <circle cx="25" cy="25" r="20" fill="none" stroke="#14B8A6" stroke-width="4" stroke-linecap="round" stroke-dasharray="125.6" stroke-dashoffset="125.6" class="preloader-ring"/>
-    </svg>
-    <!-- Texto sutil -->
-    <p class="mt-5 text-xs uppercase tracking-[0.2em] text-white/40 font-medium">Cargando</p>
-</div>
-<style>
-/* Animaci├│n de la barra circular de carga */
-.preloader-ring {
-    animation: preloaderSpin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    transform-origin: center;
-}
-@keyframes preloaderSpin {
-    0% { stroke-dashoffset: 125.6; transform: rotate(0deg); }
-    50% { stroke-dashoffset: 31.4; }
-    100% { stroke-dashoffset: 125.6; transform: rotate(360deg); }
-}
-/* Fade out del preloader cuando la p├ígina carga */
-.preloader-hide {
-    opacity: 0;
-    pointer-events: none;
-}
-</style>
-<script>
-// Ocultar preloader cuando la p├ígina carga completamente
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        var preloader = document.getElementById('preloader');
-        if (preloader) {
-            preloader.classList.add('preloader-hide');
-            setTimeout(function() { preloader.remove(); }, 500);
+    <!-- Preloader: pantalla de carga con logo y barra circular -->
+    <div id="preloader"
+        class="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#070B14] transition-opacity duration-500">
+        <!-- Logo principal -->
+        <img src="assets/img/Logo_Jetrix.png" alt="Jetrix" class="w-28 md:w-36 mb-8 animate-pulse">
+        <!-- Barra de carga circular SVG -->
+        <svg class="w-12 h-12 md:w-14 md:h-14" viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="20" fill="none" stroke="rgba(20,184,166,0.15)" stroke-width="4" />
+            <circle cx="25" cy="25" r="20" fill="none" stroke="#14B8A6" stroke-width="4" stroke-linecap="round"
+                stroke-dasharray="125.6" stroke-dashoffset="125.6" class="preloader-ring" />
+        </svg>
+        <!-- Texto sutil -->
+        <p class="mt-5 text-xs uppercase tracking-[0.2em] text-white/40 font-medium">Cargando</p>
+    </div>
+    <style>
+        /* Animaci├│n de la barra circular de carga */
+        .preloader-ring {
+            animation: preloaderSpin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            transform-origin: center;
         }
-    }, 600);
-});
-</script>
-<!-- Cuerpo: fondo claro, texto oscuro, selecci├│n azul el├®ctrico, tipograf├¡a base Raleway -->
+
+        @keyframes preloaderSpin {
+            0% {
+                stroke-dashoffset: 125.6;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                stroke-dashoffset: 31.4;
+            }
+
+            100% {
+                stroke-dashoffset: 125.6;
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Fade out del preloader cuando la p├ígina carga */
+        .preloader-hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+    <script>
+        // Ocultar preloader cuando la p├ígina carga completamente
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var preloader = document.getElementById('preloader');
+                if (preloader) {
+                    preloader.classList.add('preloader-hide');
+                    setTimeout(function () { preloader.remove(); }, 500);
+                }
+            }, 600);
+        });
+    </script>
+    <!-- Cuerpo: fondo claro, texto oscuro, selecci├│n azul el├®ctrico, tipograf├¡a base Raleway -->

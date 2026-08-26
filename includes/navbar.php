@@ -12,7 +12,7 @@
             <!-- Enlace Sobre m├¡ -->
             <a class="group relative px-2.5 lg:px-4 py-2.5 rounded-full text-[13px] lg:text-[15px] font-normal text-white/75 transition-all duration-300 hover:text-white hover:bg-white/5 whitespace-nowrap <?= $currentPage === 'sobre-mi' ? 'text-white bg-white/5' : '' ?>"
                 href="/sobre-mi">
-                <span class="relative z-10">Sobre m├¡</span>
+                <span class="relative z-10">Sobre Mí</span>
             </a>
             <!-- Enlace Planes -->
             <a class="group relative px-2.5 lg:px-4 py-2.5 rounded-full text-[13px] lg:text-[15px] font-normal text-white/75 transition-all duration-300 hover:text-white hover:bg-white/5 whitespace-nowrap <?= $currentPage === 'planes' ? 'text-white bg-white/5' : '' ?>"
@@ -52,14 +52,14 @@
                 </div>
                 <span class="text-white/20">|</span>
                 <div class="flex items-center gap-1.5 text-[11px] lg:text-[12px] text-white/75">
-                    <span class="text-electric-blue font-semibold">Ôé¼</span>
+                    <span class="text-electric-blue font-semibold">€</span>
                     <span id="rateEur">---</span>
                 </div>
             </div>
-            <!-- Bot├│n CTA principal: "Agenda asesor├¡a" con efecto hover de brillo -->
+            <!-- Botón CTA principal: "Agenda asesoría" con efecto hover de brillo -->
             <a class="group relative inline-flex items-center justify-center rounded-xl px-5 lg:px-6 py-2.5 text-[13px] lg:text-sm text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 ease-out hover:scale-[1.04] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] active:scale-[0.98] overflow-hidden focus:outline-none focus:ring-2 focus:ring-electric-blue/40 whitespace-nowrap ml-1"
                 href="/contacto">
-                <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Agenda asesor├¡a</span>
+                <span class="relative z-10 inline-flex items-center gap-3 tracking-wide">Agenda asesoría</span>
                 <span
                     class="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
             </a>
@@ -75,8 +75,9 @@
         </a>
         <div class="flex items-center gap-2">
             <a class="hidden sm:inline-block text-sm text-white/80 px-3 py-1.5 rounded-full border border-white/10 hover:bg-white/5 transition"
-                href="/contacto">Asesor├¡a</a>
-            <button id="mobileMenuBtn" class="text-white p-3 rounded-md hover:bg-white/5 transition cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center"
+                href="/contacto">Asesoría</a>
+            <button id="mobileMenuBtn"
+                class="text-white p-3 rounded-md hover:bg-white/5 transition cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center"
                 aria-expanded="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -98,7 +99,8 @@
             <a class="flex items-center gap-2" href="/">
                 <img alt="Jetrix Logo" src="assets/img/Logo_Jetrix.png" class="object-contain h-10 w-auto">
             </a>
-            <button id="mobileMenuClose" class="p-3 rounded-md hover:bg-white/10 text-white cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center">
+            <button id="mobileMenuClose"
+                class="p-3 rounded-md hover:bg-white/10 text-white cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 6 6 18"></path>
@@ -110,7 +112,7 @@
             <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'inicio' ? 'text-electric-blue' : 'text-white' ?>"
                 href="/">Inicio</a>
             <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'sobre-mi' ? 'text-electric-blue' : 'text-white/80' ?>"
-                href="/sobre-mi">Sobre m├¡</a>
+                href="/sobre-mi">Sobre Mí</a>
             <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'planes' ? 'text-electric-blue' : 'text-white/80' ?>"
                 href="/planes">Planes</a>
             <a class="block text-lg font-semibold py-3 min-h-[44px] flex items-center <?= $currentPage === 'blog' ? 'text-electric-blue' : 'text-white/80' ?>"
@@ -121,10 +123,10 @@
                 href="/servicios">Servicios</a>
             <div class="pt-2">
                 <a class="inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 w-full justify-center py-3 text-center"
-                    href="/contacto">Agenda una asesor├¡a</a>
+                    href="/contacto">Agenda una asesoría</a>
             </div>
-            <div class="pt-2 text-sm text-white/40">┬┐Necesitas ayuda? <a class="text-electric-blue"
-                    href="/contacto">Cont├íctanos</a></div>
+            <div class="pt-2 text-sm text-white/40">Necesitas ayuda? <a class="text-electric-blue"
+                    href="/contacto">Contáctanos</a></div>
         </div>
     </nav>
 </div>
