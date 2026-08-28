@@ -43,8 +43,9 @@ include __DIR__ . '/../includes/navbar.php';
                             <option value="desarrollo-web">Desarrollo Web</option>
                             <option value="sistemas">Sistemas a Medida</option>
                             <option value="chatbots">Chatbots & IA</option>
-                            <option value="automatizaciones">Automatizaciones</option>
-                            <option value="otro">Otro</option>
+<option value="automatizaciones">Automatizaciones</option>
+<option value="pagelink">PageLink · Link in Bio</option>
+<option value="otro">Otro</option>
                         </select>
                     </div>
 

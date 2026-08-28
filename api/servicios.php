@@ -235,6 +235,47 @@ include __DIR__ . '/../includes/navbar.php';
                 </div>
             </div>
 
+            <!-- Servicio 5: PageLink / Link in Bio (imagen izquierda, texto derecha) -->
+            <div class="timeline-item relative flex flex-col md:flex-row items-center gap-8 md:gap-16 mt-24 md:mt-32">
+                <!-- Imagen -->
+                <div class="w-full md:w-1/2 relative">
+                    <div class="relative step-number">05</div>
+                    <div class="timeline-img rounded-2xl overflow-hidden bg-gradient-to-br from-[#c47a8a]/20 to-[#2a1a1e] border border-zinc-200 shadow-lg p-8 flex items-center justify-center min-h-[260px]">
+                        <div class="text-center">
+                            <div class="mx-auto w-20 h-20 rounded-2xl bg-[#0f0f0f] border border-[#c47a8a]/40 flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-[#c47a8a] text-4xl">link</span>
+                            </div>
+                            <span class="text-5xl font-bold text-[#c47a8a]/40 select-none">PageLink</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dot timeline (solo desktop) -->
+                <div class="timeline-dot hidden md:block"></div>
+                <!-- Texto -->
+                <div class="w-full md:w-1/2 md:pl-8">
+                    <span class="text-xs uppercase tracking-widest text-electric-blue font-semibold">Servicio 05</span>
+                    <h2 class="mt-3 text-3xl md:text-4xl font-bold text-deep-slate leading-tight">PageLink — Link in Bio</h2>
+                    <p class="mt-4 text-zinc-500 leading-relaxed text-lg">
+                        Una página personalizable que concentra todos tus enlaces, redes y productos en un solo lugar. Perfecta para creadores, influencers y marcas que quieren convertir su audiencia en clientes.
+                    </p>
+                    <ul class="mt-6 space-y-3">
+                        <li class="flex items-center gap-3 text-zinc-600"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Diseño oscuro rosado elegante y totalmente personalizable</li>
+                        <li class="flex items-center gap-3 text-zinc-600"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Panel admin para gestionar enlaces, testimonios y perfil</li>
+                        <li class="flex items-center gap-3 text-zinc-600"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Tracking de clics y estadísticas en tiempo real</li>
+                        <li class="flex items-center gap-3 text-zinc-600"><span class="w-2 h-2 bg-electric-blue rounded-full shrink-0"></span> Recuperación de contraseña por pregunta de seguridad</li>
+                    </ul>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a href="https://pagelink-josue.vercel.app" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-white bg-gradient-to-r from-electric-blue to-teal-600 transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(20,184,166,0.35)] overflow-hidden">
+                            <span class="relative z-10 inline-flex items-center gap-3">Ver demo</span>
+                            <span class="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
+                        </a>
+                        <a href="/contacto" class="group relative inline-flex items-center justify-center rounded-xl px-7 py-3 text-[15px] text-deep-slate bg-white border border-zinc-200 transition-all duration-500 hover:border-electric-blue hover:text-electric-blue overflow-hidden">
+                            <span class="relative z-10 inline-flex items-center gap-3">Cotizar el mío</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

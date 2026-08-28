@@ -37,20 +37,58 @@ include __DIR__ . '/../includes/navbar.php';
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10" id="projectsGrid">
+
+                <!-- Proyecto: PageLink (link-in-bio personalizable con admin) -->
+                <div class="project-card bg-white rounded-[18px] overflow-hidden border border-zinc-200 transition-all duration-300 group" data-category="sistemas">
+                    <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-rose-400/30 to-pink-100">
+                        <div class="absolute inset-0 bg-gradient-to-br from-rose-400/20 to-pink-100/50 group-hover:opacity-0 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#c47a8a]/30 to-[#e8b4c0]/20"></div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                        <div class="flex flex-col items-center justify-center h-full px-6">
+                            <span class="text-8xl font-bold text-white/10 select-none">P</span>
+                            <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-[#c47a8a] bg-white/80 rounded-full px-3 py-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#c47a8a]"></span> Link in Bio
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-lg font-semibold text-deep-slate mb-3 leading-7">PageLink</h3>
+                        <p class="text-sm text-zinc-500 leading-[22.75px] mb-4">Centraliza todos tus enlaces en una página personalizable con tema oscuro rosado. Gestiona tus links, testimonios y mide cada clic desde un panel admin propio.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Panel admin propio</li>
+                            <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Tracking de clics y estadísticas</li>
+                            <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Testimonios y gestión de comentarios</li>
+                        </ul>
+                        <div class="mt-auto flex items-center justify-between">
+                            <a href="https://pagelink-josue.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-black text-white text-sm font-medium transition-all duration-300 hover:bg-zinc-800">Ver demo</a>
+                            <span class="text-xs text-zinc-400 capitalize">Link in Bio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto: WebJetrix -->
                 <div class="project-card bg-white rounded-[18px] overflow-hidden border border-zinc-200 transition-all duration-300 group" data-category="paginas-web">
                     <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-electric-blue/30 to-teal-100">
                         <div class="absolute inset-0 bg-gradient-to-br from-electric-blue/20 to-teal-100/50 group-hover:opacity-0 transition-opacity duration-500"></div>
                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#0070F3]/20 to-[#14B8A6]/20"></div>
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
-                        <div class="flex items-center justify-center h-full">
+                        <div class="flex flex-col items-center justify-center h-full px-6">
                             <span class="text-8xl font-bold text-white/10 select-none">W</span>
+                            <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-electric-blue bg-white/80 rounded-full px-3 py-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-electric-blue"></span> Sitio Web
+                            </span>
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-lg font-semibold text-deep-slate mb-3 leading-7">WebJetrix</h3>
-                        <p class="text-sm text-zinc-500 leading-[22.75px] mb-6">Rediseño completo de sitio web corporativo enfocado en conversión y rendimiento.</p>
+                        <p class="text-sm text-zinc-500 leading-[22.75px] mb-4">Sitio web corporativo de alto rendimiento para la agencia, diseñado con enfoque estratégico en conversión, velocidad y posicionamiento.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Diseño orientado a conversión y SEO</li>
+                            <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Precios en vivo con tasas BCV y modo claro/oscuro</li>
+                            <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Portafolio, planes y cotizaciones integrados</li>
+                        </ul>
                         <div class="mt-auto flex items-center justify-between">
-                            <a href="/" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-black text-white text-sm font-medium transition-all duration-300 hover:bg-zinc-800">Ver proyecto</a>
+                            <a href="https://webjetrix.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-black text-white text-sm font-medium transition-all duration-300 hover:bg-zinc-800">Ver sitio</a>
                             <span class="text-xs text-zinc-400 capitalize">Página Web</span>
                         </div>
                     </div>

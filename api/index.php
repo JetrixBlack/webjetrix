@@ -206,9 +206,9 @@ include __DIR__ . '/../includes/navbar.php';
                 <p class="mt-4 text-white/60 text-base md:text-lg leading-relaxed max-w-xl mx-auto">Desarrollo web, sistemas a medida,
                     automatización y posicionamiento construidos con enfoque estratégico, visual y comercial.</p>
             </div>
-            <div class="flex flex-col md:flex-row gap-4 md:gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
                 <div
-                    class="flex-1 relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5">
+                    class="relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5 h-full flex flex-col">
                     <div class="flex items-center gap-3 mb-3">
                         <span class="material-symbols-outlined text-electric-blue text-3xl">web</span>
                         <h3 class="text-lg font-bold text-white">Desarrollo Web</h3>
@@ -217,7 +217,7 @@ include __DIR__ . '/../includes/navbar.php';
                         para convertir el tráfico en clientes potenciales.</p>
                 </div>
                 <div
-                    class="flex-1 relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5">
+                    class="relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5 h-full flex flex-col">
                     <div class="flex items-center gap-3 mb-3">
                         <span class="material-symbols-outlined text-electric-blue text-3xl">bolt</span>
                         <h3 class="text-lg font-bold text-white">Automatización & IA</h3>
@@ -226,7 +226,7 @@ include __DIR__ . '/../includes/navbar.php';
                         al cliente y ventas 24/7.</p>
                 </div>
                 <div
-                    class="flex-1 relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5">
+                    class="relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5 h-full flex flex-col">
                     <div class="flex items-center gap-3 mb-3">
                         <span class="material-symbols-outlined text-electric-blue text-3xl">storefront</span>
                         <h3 class="text-lg font-bold text-white">Ecommerce</h3>
@@ -235,7 +235,7 @@ include __DIR__ . '/../includes/navbar.php';
                         escalar tu negocio.</p>
                 </div>
                 <div
-                    class="flex-1 relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5">
+                    class="relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5 h-full flex flex-col">
                     <div class="flex items-center gap-3 mb-3">
                         <span class="material-symbols-outlined text-electric-blue text-3xl">palette</span>
                         <h3 class="text-lg font-bold text-white">UX & Diseño</h3>
@@ -244,7 +244,7 @@ include __DIR__ . '/../includes/navbar.php';
                         percepción de valor y la conversión.</p>
                 </div>
                 <div
-                    class="flex-1 relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5">
+                    class="relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5 h-full flex flex-col">
                     <div class="flex items-center gap-3 mb-3">
                         <span class="material-symbols-outlined text-electric-blue text-3xl">trending_up</span>
                         <h3 class="text-lg font-bold text-white">SEO & Performance</h3>
@@ -253,13 +253,22 @@ include __DIR__ . '/../includes/navbar.php';
                         orgánica y velocidad.</p>
                 </div>
                 <div
-                    class="flex-1 relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5">
+                    class="relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5 h-full flex flex-col">
                     <div class="flex items-center gap-3 mb-3">
                         <span class="material-symbols-outlined text-electric-blue text-3xl">calendar_month</span>
                         <h3 class="text-lg font-bold text-white">Agenda Pro</h3>
                     </div>
                     <p class="text-sm text-white/60 leading-relaxed">Sistema de reservas y agenda online para gestionar
                         turnos y citas.</p>
+                </div>
+                <div
+                    class="relative group border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:border-electric-blue/40 bg-white/5 h-full flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="material-symbols-outlined text-electric-blue text-3xl">link</span>
+                        <h3 class="text-lg font-bold text-white">PageLink</h3>
+                    </div>
+                    <p class="text-sm text-white/60 leading-relaxed">Página link-in-bio personalizable con panel admin,
+                        tracking de clics y testimonios. Ideales para creadores y marcas.</p>
                 </div>
             </div>
         </div>

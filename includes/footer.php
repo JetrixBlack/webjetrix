@@ -24,6 +24,9 @@
                     href="/servicios">Ecommerce</a>
                 <a class="text-white/50 hover:text-electric-blue transition-colors text-sm" href="/servicios">Agenda
                     Pro</a>
+                <a class="text-white/50 hover:text-electric-blue transition-colors text-sm"
+                    href="https://pagelink-josue.vercel.app" target="_blank" rel="noopener noreferrer"
+                    aria-label="PageLink - Link in Bio (se abre en pestaña nueva)">PageLink · Link in Bio</a>
             </div>
             <!-- Columna 3: Enlaces institucionales / Empresa -->
             <div class="flex flex-col gap-4">
