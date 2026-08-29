@@ -54,14 +54,23 @@ include __DIR__ . '/../includes/navbar.php';
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-lg font-semibold text-deep-slate mb-3 leading-7">PageLink</h3>
                         <p class="text-sm text-zinc-500 leading-[22.75px] mb-4">Centraliza todos tus enlaces en una página personalizable con tema oscuro rosado. Gestiona tus links, testimonios y mide cada clic desde un panel admin propio.</p>
-                        <ul class="space-y-2 mb-6">
+                        <ul class="space-y-2 mb-4">
                             <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Panel admin propio</li>
                             <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Tracking de clics y estadísticas</li>
                             <li class="flex items-center gap-2 text-sm text-zinc-600"><span class="text-electric-blue"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span> Testimonios y gestión de comentarios</li>
                         </ul>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://pagelink-josue.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-black text-white text-sm font-medium transition-all duration-300 hover:bg-zinc-800">Ver demo</a>
-                            <span class="text-xs text-zinc-400 capitalize">Link in Bio</span>
+                        <div class="bg-zinc-50 border border-zinc-200 rounded-lg px-3 py-2.5 mb-4">
+                            <div class="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">Demo</div>
+                            <div class="flex items-center gap-2 text-xs text-zinc-600">
+                                <span class="font-medium text-zinc-700">Usuario:</span>
+                                <code class="bg-white border border-zinc-200 rounded px-1.5 py-0.5 text-[11px]">admin</code>
+                                <span class="font-medium text-zinc-700 ml-1">Clave:</span>
+                                <code class="bg-white border border-zinc-200 rounded px-1.5 py-0.5 text-[11px]">admin123</code>
+                            </div>
+                        </div>
+                        <div class="mt-auto grid grid-cols-2 gap-2">
+                            <a href="https://pagelink-josue.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-black text-white text-sm font-medium transition-all duration-300 hover:bg-zinc-800">Ver página</a>
+                            <a href="https://pagelink-josue.vercel.app/admin" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg border border-zinc-300 text-deep-slate text-sm font-medium transition-all duration-300 hover:border-[#c47a8a] hover:text-[#c47a8a]">Panel admin</a>
                         </div>
                     </div>
                 </div>
