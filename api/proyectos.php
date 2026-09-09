@@ -40,13 +40,13 @@ include __DIR__ . '/../includes/navbar.php';
 
                 <!-- Proyecto: PageLink (link-in-bio personalizable con admin) -->
                 <div class="project-card bg-white rounded-[18px] overflow-hidden border border-zinc-200 transition-all duration-300 group" data-category="sistemas">
-                    <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-rose-400/30 to-pink-100">
-                        <div class="absolute inset-0 bg-gradient-to-br from-rose-400/20 to-pink-100/50 group-hover:opacity-0 transition-opacity duration-500"></div>
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#c47a8a]/30 to-[#e8b4c0]/20"></div>
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
-                        <div class="flex flex-col items-center justify-center h-full px-6">
-                            <span class="text-8xl font-bold text-white/10 select-none">P</span>
-                            <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-[#c47a8a] bg-white/80 rounded-full px-3 py-1">
+                    <!-- Banner con imagen real del proyecto PageLink -->
+                    <div class="relative h-[280px] overflow-hidden">
+                        <img src="/assets/img/Pagelink.png" alt="PageLink - Link in Bio personalizable" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/15"></div>
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center">
+                            <span class="inline-flex items-center gap-2 text-xs font-medium text-[#c47a8a] bg-white/85 border border-[#c47a8a]/20 backdrop-blur-sm rounded-full px-3 py-1">
                                 <span class="w-1.5 h-1.5 rounded-full bg-[#c47a8a]"></span> Link in Bio
                             </span>
                         </div>
@@ -77,13 +77,13 @@ include __DIR__ . '/../includes/navbar.php';
 
                 <!-- Proyecto: WebJetrix -->
                 <div class="project-card bg-white rounded-[18px] overflow-hidden border border-zinc-200 transition-all duration-300 group" data-category="paginas-web">
-                    <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-electric-blue/30 to-teal-100">
-                        <div class="absolute inset-0 bg-gradient-to-br from-electric-blue/20 to-teal-100/50 group-hover:opacity-0 transition-opacity duration-500"></div>
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#0070F3]/20 to-[#14B8A6]/20"></div>
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
-                        <div class="flex flex-col items-center justify-center h-full px-6">
-                            <span class="text-8xl font-bold text-white/10 select-none">W</span>
-                            <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-electric-blue bg-white/80 rounded-full px-3 py-1">
+                    <!-- Banner con imagen real del proyecto WebJetrix -->
+                    <div class="relative h-[280px] overflow-hidden">
+                        <img src="/assets/img/WebJetrix.png" alt="WebJetrix - Agencia de desarrollo web" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/15"></div>
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center">
+                            <span class="inline-flex items-center gap-2 text-xs font-medium text-electric-blue bg-white/85 border border-electric-blue/20 backdrop-blur-sm rounded-full px-3 py-1">
                                 <span class="w-1.5 h-1.5 rounded-full bg-electric-blue"></span> Sitio Web
                             </span>
                         </div>

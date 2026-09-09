@@ -1009,96 +1009,345 @@ include __DIR__ . '/../includes/navbar.php';
             </div>
     </section>
 
-    <!-- PROJECTS: Portafolio de proyectos reales desarrollados para marcas como Ekimedicall y TravelOne -->
-    <section class="py-32 lg:py-40 bg-black text-white">
-        <div class="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12">
-            <div class="text-center mb-6">
-                <span class="text-sm uppercase tracking-widest text-electric-blue font-semibold">Empresas que confiaron
-                    en Jetrix</span>
-                <h2 class="mt-3 text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] text-white">
-                    Proyectos desarrollados para <span class="text-electric-blue">marcas reales</span></h2>
-                <p class="mt-4 text-white/50 text-lg max-w-xl mx-auto">Cada proyecto es una historia de crecimiento.
-                    Conoce algunos de los que hemos construido.</p>
+    <!-- PROJECTS: Carrusel interactivo de proyectos destacados del portafolio -->
+    <section class="py-24 lg:py-32 bg-black text-white relative overflow-hidden" id="proyectos-destacados">
+        <!-- Resplandor sutil de fondo de la marca -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-electric-blue/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div class="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Encabezado con título y enlace al portafolio -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+                <div>
+                    <span class="text-xs sm:text-sm uppercase tracking-widest text-electric-blue font-semibold">Empresas que confiaron en Jetrix</span>
+                    <h2 class="mt-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.1] text-white">
+                        Proyectos desarrollados para <span class="text-electric-blue">marcas reales</span>
+                    </h2>
+                    <p class="mt-2 text-zinc-400 text-sm sm:text-base max-w-2xl">
+                        Cada proyecto es una historia de crecimiento. Desliza para conocer las soluciones web y sistemas que hemos construido.
+                    </p>
+                </div>
+                <div class="self-start sm:self-end shrink-0">
+                    <a class="inline-flex items-center gap-1.5 text-zinc-400 hover:text-electric-blue font-medium text-xs sm:text-sm transition-colors"
+                        href="/proyectos">
+                        <span>Ver portafolio completo</span>
+                        <span class="material-symbols-outlined text-base">north_east</span>
+                    </a>
+                </div>
             </div>
-            <div class="flex justify-end mb-12">
-                <a class="text-white/70 font-semibold flex items-center gap-2 hover:text-electric-blue transition-colors text-sm"
-                    href="/proyectos">Ver portafolio completo <span
-                        class="material-symbols-outlined text-base">north_east</span></a>
+
+            <!-- Contenedor relativo con flechas flotantes a los extremos -->
+            <div class="relative group/carousel px-1 sm:px-2">
+
+                <!-- Flecha lateral izquierda para regresar -->
+                <button id="carouselPrevBtn" type="button" aria-label="Proyecto anterior"
+                    class="absolute -left-2 sm:-left-4 lg:-left-5 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#181a20]/95 hover:bg-zinc-800 border border-zinc-700/80 hover:border-electric-blue hover:text-electric-blue text-white flex items-center justify-center transition-all duration-300 shadow-2xl backdrop-blur-md active:scale-95 cursor-pointer">
+                    <span class="material-symbols-outlined text-2xl">arrow_back</span>
+                </button>
+
+                <!-- Flecha lateral derecha para adelantar -->
+                <button id="carouselNextBtn" type="button" aria-label="Siguiente proyecto"
+                    class="absolute -right-2 sm:-right-4 lg:-right-5 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#181a20]/95 hover:bg-zinc-800 border border-zinc-700/80 hover:border-electric-blue hover:text-electric-blue text-white flex items-center justify-center transition-all duration-300 shadow-2xl backdrop-blur-md active:scale-95 cursor-pointer">
+                    <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+                </button>
+
+                <!-- Track horizontal del carrusel (4 visibles en desktop) -->
+                <div id="projectsCarouselTrack"
+                    class="flex gap-4 lg:gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory py-2 no-scrollbar cursor-grab active:cursor-grabbing">
+
+                    <!-- Card 1: PageLink -->
+                    <div class="project-carousel-card snap-start flex-none w-[84vw] sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] bg-[#181a20] border border-zinc-800 hover:border-zinc-700 rounded-[18px] overflow-hidden transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-black/40">
+                        <!-- Banner con imagen real del proyecto PageLink -->
+                        <div class="relative h-[280px] overflow-hidden">
+                            <img src="/assets/img/Pagelink.png" alt="PageLink - Link in Bio personalizable" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#181a20]/80 via-[#181a20]/30 to-transparent"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/20"></div>
+                            <div class="absolute bottom-4 left-0 right-0 flex justify-center">
+                                <span class="inline-flex items-center gap-2 text-xs font-medium text-[#f3a4b5] bg-[#181a20]/80 border border-[#c47a8a]/30 backdrop-blur-sm rounded-full px-3 py-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-[#f3a4b5]"></span> Link in Bio
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-3 leading-7">PageLink</h3>
+                                <p class="text-sm text-zinc-400 leading-[22.75px] mb-4">Centraliza todos tus enlaces en una página personalizable con tema oscuro rosado. Gestiona tus links, testimonios y mide cada clic desde un panel admin propio.</p>
+                                <ul class="space-y-2 mb-4">
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Panel admin propio</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Tracking de clics y estadísticas</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Testimonios y comentarios</span>
+                                    </li>
+                                </ul>
+                                <div class="bg-zinc-900/90 border border-zinc-800 rounded-lg px-3 py-2.5 mb-4">
+                                    <div class="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">Demo</div>
+                                    <div class="flex items-center gap-2 text-xs text-zinc-400">
+                                        <span class="font-medium text-zinc-300">Usuario:</span>
+                                        <code class="bg-zinc-800 border border-zinc-700 text-zinc-200 rounded px-1.5 py-0.5 text-[11px]">admin</code>
+                                        <span class="font-medium text-zinc-300 ml-1">Clave:</span>
+                                        <code class="bg-zinc-800 border border-zinc-700 text-zinc-200 rounded px-1.5 py-0.5 text-[11px]">admin123</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-auto grid grid-cols-2 gap-2 pt-2 border-t border-zinc-800/80">
+                                <a href="https://pagelink-josue.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-all duration-300">Ver página</a>
+                                <a href="https://pagelink-josue.vercel.app/admin" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white text-sm font-medium transition-all duration-300">Panel admin</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: WebJetrix -->
+                    <div class="project-carousel-card snap-start flex-none w-[84vw] sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] bg-[#181a20] border border-zinc-800 hover:border-zinc-700 rounded-[18px] overflow-hidden transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-black/40">
+                        <!-- Banner con imagen real del proyecto WebJetrix -->
+                        <div class="relative h-[280px] overflow-hidden">
+                            <img src="/assets/img/WebJetrix.png" alt="WebJetrix - Agencia de desarrollo web" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#181a20]/80 via-[#181a20]/30 to-transparent"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/20"></div>
+                            <div class="absolute bottom-4 left-0 right-0 flex justify-center">
+                                <span class="inline-flex items-center gap-2 text-xs font-medium text-electric-blue bg-[#181a20]/80 border border-electric-blue/30 backdrop-blur-sm rounded-full px-3 py-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-electric-blue"></span> Sitio Web
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-3 leading-7">WebJetrix</h3>
+                                <p class="text-sm text-zinc-400 leading-[22.75px] mb-4">Sitio web corporativo de alto rendimiento para la agencia, diseñado con enfoque estratégico en conversión, velocidad y posicionamiento.</p>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Diseño orientado a conversión y SEO</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Precios en vivo con tasas BCV</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Portafolio, planes y cotizaciones integrados</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2 border-t border-zinc-800/80">
+                                <a href="https://webjetrix.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-all duration-300">Ver sitio</a>
+                                <span class="text-xs text-zinc-400 capitalize">Página Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Ekimedicall -->
+                    <div class="project-carousel-card snap-start flex-none w-[84vw] sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] bg-[#181a20] border border-zinc-800 hover:border-zinc-700 rounded-[18px] overflow-hidden transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-black/40">
+                        <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-blue-500/20 via-[#1f272c] to-[#181a20]">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/15 to-indigo-500/10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#0070F3]/20 to-[#14B8A6]/20"></div>
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                            <div class="flex flex-col items-center justify-center h-full px-6">
+                                <span class="text-8xl font-bold text-white/10 select-none group-hover:scale-105 transition-transform duration-500">E</span>
+                                <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-cyan-300 bg-cyan-500/15 border border-cyan-500/30 rounded-full px-3 py-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Página Web
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-3 leading-7">Ekimedicall</h3>
+                                <p class="text-sm text-zinc-400 leading-[22.75px] mb-4">Portal médico con enfoque en claridad informativa y conversión de pacientes.</p>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Estructura clínica limpia y clara</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Agendamiento directo y WhatsApp</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Carga ultra rápida en móviles</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2 border-t border-zinc-800/80">
+                                <a href="https://ekimedicall.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-all duration-300">Ver proyecto</a>
+                                <span class="text-xs text-zinc-400 capitalize">Página Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: TravelOne -->
+                    <div class="project-carousel-card snap-start flex-none w-[84vw] sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] bg-[#181a20] border border-zinc-800 hover:border-zinc-700 rounded-[18px] overflow-hidden transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-black/40">
+                        <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-amber-500/20 via-[#282620] to-[#181a20]">
+                            <div class="absolute inset-0 bg-gradient-to-br from-amber-500/15 to-orange-500/10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#0070F3]/20 to-[#14B8A6]/20"></div>
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                            <div class="flex flex-col items-center justify-center h-full px-6">
+                                <span class="text-8xl font-bold text-white/10 select-none group-hover:scale-105 transition-transform duration-500">T</span>
+                                <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-amber-300 bg-amber-500/15 border border-amber-500/30 rounded-full px-3 py-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Sistema
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-3 leading-7">TravelOne</h3>
+                                <p class="text-sm text-zinc-400 leading-[22.75px] mb-4">Plataforma de captación y reservas para agencia de viajes con panel admin.</p>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Catálogo dinámico de destinos y tours</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Captación ágil de cotizaciones</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Panel de control administrativo</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2 border-t border-zinc-800/80">
+                                <a href="https://traveloneaxm.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-all duration-300">Ver proyecto</a>
+                                <span class="text-xs text-zinc-400 capitalize">Sistema</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Asistente Virtual IA -->
+                    <div class="project-carousel-card snap-start flex-none w-[84vw] sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] bg-[#181a20] border border-zinc-800 hover:border-zinc-700 rounded-[18px] overflow-hidden transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-black/40">
+                        <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-green-500/20 via-[#1e2824] to-[#181a20]">
+                            <div class="absolute inset-0 bg-gradient-to-br from-green-500/15 to-emerald-500/10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#0070F3]/20 to-[#14B8A6]/20"></div>
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                            <div class="flex flex-col items-center justify-center h-full px-6">
+                                <span class="text-8xl font-bold text-white/10 select-none group-hover:scale-105 transition-transform duration-500">A</span>
+                                <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-emerald-300 bg-emerald-500/15 border border-emerald-500/30 rounded-full px-3 py-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Chatbot
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-3 leading-7">Asistente Virtual IA</h3>
+                                <p class="text-sm text-zinc-400 leading-[22.75px] mb-4">Agente conversacional 24/7 integrado con WhatsApp para calificación de leads.</p>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Atención 24/7 sin tiempo de espera</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Calificación automática de prospectos</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Conexión directa con CRM y WhatsApp</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2 border-t border-zinc-800/80">
+                                <a href="/contacto" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-all duration-300">Ver proyecto</a>
+                                <span class="text-xs text-zinc-400 capitalize">Chatbot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: E-commerce Elite -->
+                    <div class="project-carousel-card snap-start flex-none w-[84vw] sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] bg-[#181a20] border border-zinc-800 hover:border-zinc-700 rounded-[18px] overflow-hidden transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-black/40">
+                        <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-blue-500/20 via-[#1e242c] to-[#181a20]">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/15 to-indigo-500/10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#0070F3]/20 to-[#14B8A6]/20"></div>
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                            <div class="flex flex-col items-center justify-center h-full px-6">
+                                <span class="text-8xl font-bold text-white/10 select-none group-hover:scale-105 transition-transform duration-500">E</span>
+                                <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-blue-300 bg-blue-500/15 border border-blue-500/30 rounded-full px-3 py-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Ecommerce
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-3 leading-7">E-commerce Elite</h3>
+                                <p class="text-sm text-zinc-400 leading-[22.75px] mb-4">Tienda online de alto rendimiento con pasarela de pagos integrada y gestión de envíos.</p>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Pasarelas de pago seguras y multi-moneda</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Checkout ágil y sin fricciones</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Control de inventario y pedidos en vivo</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2 border-t border-zinc-800/80">
+                                <a href="/contacto" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-all duration-300">Ver proyecto</a>
+                                <span class="text-xs text-zinc-400 capitalize">Ecommerce</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Plataforma ERP -->
+                    <div class="project-carousel-card snap-start flex-none w-[84vw] sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] bg-[#181a20] border border-zinc-800 hover:border-zinc-700 rounded-[18px] overflow-hidden transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-black/40">
+                        <div class="relative h-[280px] overflow-hidden bg-gradient-to-br from-zinc-500/20 via-[#242830] to-[#181a20]">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-500/15 to-slate-500/10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-r from-[#0070F3]/20 to-[#14B8A6]/20"></div>
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                            <div class="flex flex-col items-center justify-center h-full px-6">
+                                <span class="text-8xl font-bold text-white/10 select-none group-hover:scale-105 transition-transform duration-500">E</span>
+                                <span class="mt-2 inline-flex items-center gap-2 text-xs font-medium text-zinc-300 bg-zinc-700/30 border border-zinc-600/30 rounded-full px-3 py-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-zinc-400"></span> Sistema
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-3 leading-7">Plataforma ERP</h3>
+                                <p class="text-sm text-zinc-400 leading-[22.75px] mb-4">Sistema de gestión empresarial con módulos de inventario, facturación y reportes.</p>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Módulos de inventario y facturación</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Control de roles, usuarios y finanzas</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-sm text-zinc-300">
+                                        <span class="text-electric-blue shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                        <span>Reportes gerenciales en tiempo real</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2 border-t border-zinc-800/80">
+                                <a href="/contacto" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-all duration-300">Ver proyecto</a>
+                                <span class="text-xs text-zinc-400 capitalize">Sistema</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <!-- Grid de 4 proyectos destacados -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10">
-                <!-- Proyecto: Ekimedicall -->
-                <a class="group block" href="https://ekimedicall.com" target="_blank">
-                    <div
-                        class="overflow-hidden rounded-2xl bg-white/5 border border-white/10 mb-5 aspect-video flex items-center justify-center group-hover:border-electric-blue/40 transition-all duration-500">
-                        <span
-                            class="material-symbols-outlined text-white/20 text-[100px] group-hover:text-electric-blue/30 transition-all duration-500">local_hospital</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-electric-blue transition-colors">
-                                Ekimedicall</h3>
-                            <p class="text-white/50 text-sm mt-1">Claridad médica y conversión</p>
-                        </div>
-                        <span
-                            class="material-symbols-outlined text-white/30 group-hover:text-electric-blue transition-all duration-500">arrow_forward</span>
-                    </div>
-                </a>
-                <!-- Proyecto: TravelOne -->
-                <a class="group block" href="https://traveloneaxm.com" target="_blank">
-                    <div
-                        class="overflow-hidden rounded-2xl bg-white/5 border border-white/10 mb-5 aspect-video flex items-center justify-center group-hover:border-electric-blue/40 transition-all duration-500">
-                        <span
-                            class="material-symbols-outlined text-white/20 text-[100px] group-hover:text-electric-blue/30 transition-all duration-500">flight</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-electric-blue transition-colors">
-                                TravelOne</h3>
-                            <p class="text-white/50 text-sm mt-1">Captación para turismo</p>
-                        </div>
-                        <span
-                            class="material-symbols-outlined text-white/30 group-hover:text-electric-blue transition-all duration-500">arrow_forward</span>
-                    </div>
-                </a>
-                <!-- Proyecto: Próximo (placeholder) -->
-                <a class="group block opacity-60 hover:opacity-100 transition-all duration-500" href="/contacto"
-                    target="_blank">
-                    <div
-                        class="overflow-hidden rounded-2xl bg-white/5 border border-dashed border-white/20 mb-5 aspect-video flex items-center justify-center group-hover:border-electric-blue/40 transition-all duration-500">
-                        <span
-                            class="material-symbols-outlined text-white/20 text-[100px] group-hover:text-electric-blue/30 transition-all duration-500">add</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h3
-                                class="text-xl font-bold text-white/50 group-hover:text-electric-blue transition-colors">
-                                Tu proyecto aquí</h3>
-                            <p class="text-white/30 text-sm mt-1">Cuéntanos tu idea y la hacemos realidad</p>
-                        </div>
-                        <span
-                            class="material-symbols-outlined text-white/20 group-hover:text-electric-blue transition-all duration-500">arrow_forward</span>
-                    </div>
-                </a>
-                <!-- Proyecto: Próximo (placeholder) -->
-                <a class="group block opacity-60 hover:opacity-100 transition-all duration-500" href="/contacto"
-                    target="_blank">
-                    <div
-                        class="overflow-hidden rounded-2xl bg-white/5 border border-dashed border-white/20 mb-5 aspect-video flex items-center justify-center group-hover:border-electric-blue/40 transition-all duration-500">
-                        <span
-                            class="material-symbols-outlined text-white/20 text-[100px] group-hover:text-electric-blue/30 transition-all duration-500">rocket_launch</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h3
-                                class="text-xl font-bold text-white/50 group-hover:text-electric-blue transition-colors">
-                                Próximo proyecto</h3>
-                            <p class="text-white/30 text-sm mt-1">Sé el próximo en transformar tu negocio</p>
-                        </div>
-                        <span
-                            class="material-symbols-outlined text-white/20 group-hover:text-electric-blue transition-all duration-500">arrow_forward</span>
-                    </div>
-                </a>
+
+            <!-- Indicadores (Dots) e instrucción de navegación -->
+            <div class="mt-6 flex items-center justify-between">
+                <div class="flex items-center gap-2" id="carouselDots">
+                    <!-- Dots inyectados por JavaScript -->
+                </div>
+                <div class="flex items-center gap-1.5 text-xs text-zinc-500">
+                    <span class="material-symbols-outlined text-sm">swipe</span>
+                    <span>Arrastra o usa las flechas laterales</span>
+                </div>
             </div>
         </div>
     </section>
@@ -1579,6 +1828,124 @@ include __DIR__ . '/../includes/navbar.php';
                 else if (text === 'Chatbot 3.000') togglePromos(2);
             });
         });
+    })();
+
+    // Lógica del Carrusel de Proyectos Destacados
+    (function () {
+        var track = document.getElementById('projectsCarouselTrack');
+        var prevBtn = document.getElementById('carouselPrevBtn');
+        var nextBtn = document.getElementById('carouselNextBtn');
+        var dotsContainer = document.getElementById('carouselDots');
+        if (!track) return;
+
+        var cards = track.querySelectorAll('.project-carousel-card');
+        if (!cards.length) return;
+
+        // Generar dots indicadores
+        if (dotsContainer) {
+            dotsContainer.innerHTML = '';
+            cards.forEach(function (_, idx) {
+                var dot = document.createElement('button');
+                dot.type = 'button';
+                dot.setAttribute('aria-label', 'Ir al proyecto ' + (idx + 1));
+                dot.className = 'h-2 rounded-full transition-all duration-300 ' + (idx === 0 ? 'bg-electric-blue w-6' : 'bg-white/20 hover:bg-white/40 w-2');
+                dot.addEventListener('click', function () {
+                    cards[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                });
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        // Actualizar estado activo de dots al hacer scroll
+        var updateDots = function () {
+            if (!dotsContainer) return;
+            var scrollLeft = track.scrollLeft;
+            var activeIdx = 0;
+            var minDiff = Infinity;
+            cards.forEach(function (card, idx) {
+                var diff = Math.abs(card.offsetLeft - track.offsetLeft - scrollLeft);
+                if (diff < minDiff) {
+                    minDiff = diff;
+                    activeIdx = idx;
+                }
+            });
+            var dots = dotsContainer.children;
+            for (var i = 0; i < dots.length; i++) {
+                if (i === activeIdx) {
+                    dots[i].className = 'h-2 rounded-full bg-electric-blue w-6 transition-all duration-300';
+                } else {
+                    dots[i].className = 'h-2 rounded-full bg-white/20 hover:bg-white/40 w-2 transition-all duration-300';
+                }
+            }
+        };
+
+        track.addEventListener('scroll', updateDots, { passive: true });
+
+        // Calcular desplazamiento por tarjeta incluyendo gap
+        var getStep = function () {
+            var firstCard = cards[0];
+            var style = window.getComputedStyle(track);
+            var gap = parseInt(style.gap) || 24;
+            return firstCard.offsetWidth + gap;
+        };
+
+        // Navegación por flechas
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function () {
+                track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function () {
+                track.scrollBy({ left: getStep(), behavior: 'smooth' });
+            });
+        }
+
+        // Drag con mouse en desktop
+        var isDown = false;
+        var startX = 0;
+        var scrollStart = 0;
+
+        track.addEventListener('mousedown', function (e) {
+            isDown = true;
+            startX = e.pageX - track.offsetLeft;
+            scrollStart = track.scrollLeft;
+        });
+
+        window.addEventListener('mouseup', function () {
+            isDown = false;
+        });
+
+        track.addEventListener('mousemove', function (e) {
+            if (!isDown) return;
+            e.preventDefault();
+            var x = e.pageX - track.offsetLeft;
+            var walk = (x - startX) * 1.4;
+            track.scrollLeft = scrollStart - walk;
+        });
+
+        // Auto-avance suave pausado al pasar el cursor
+        var autoTimer = null;
+        var startAuto = function () {
+            stopAuto();
+            autoTimer = setInterval(function () {
+                var maxScroll = track.scrollWidth - track.clientWidth;
+                if (track.scrollLeft >= maxScroll - 15) {
+                    track.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    track.scrollBy({ left: getStep(), behavior: 'smooth' });
+                }
+            }, 5000);
+        };
+
+        var stopAuto = function () {
+            if (autoTimer) clearInterval(autoTimer);
+        };
+
+        track.addEventListener('mouseenter', stopAuto);
+        track.addEventListener('mouseleave', startAuto);
+        startAuto();
     })();
 </script>
 <?php // Footer

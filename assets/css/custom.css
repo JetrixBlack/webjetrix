@@ -166,3 +166,12 @@ p, h1, h2, h3, h4, h5, h6, li, .text-content { overflow-wrap: break-word; word-b
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+
+/* Ocultar barra de desplazamiento en carruseles y tracks horizontales */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
